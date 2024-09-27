@@ -6,30 +6,18 @@ body, html {
 }
 
 #banner {
-    position: relative;
-    height: 100px;
-    width: 100vw; 
-    height: 20%; 
-    padding: 5vh 5vw; 
-}
-
-#banner-content {
-    height: 100%; /* Adjust height as needed */
-    background-image: url('src/banner.jpg');
-    background-size: cover;
-    position: relative;
-    display: flex;
-    opacity: 0.1; /* Set opacity */
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-#profile {
+    width: 100vw;
+    height: 150px;
+    background-color: #34495e;
     display: flex;
     align-items: center;
-    position: absolute; /* Use absolute positioning */
-    left: 10px; /* Position from the left */
-    bottom: 10px; /* Position from the bottom */
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+#profile-info {
+    display: flex;
+    align-items: center;
 }
 
 .profile-image {
@@ -37,44 +25,62 @@ body, html {
     height: 100px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 20px; /* Space between image and name */
+    margin-right: 20px;
 }
 
+#name h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
 
-#name {
-    color: white; /* Set text color to white for visibility */
+#name h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #ecf0f1;
 }
 
 .content {
-    padding: 20px; /* Adjust padding */
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .sidebar {
-    display: grid;
-    width: 30%;
-    height: 100%;
+    width: 20%;
     background-color: rgb(20, 27, 32);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .sidebar button {
-    width: 100%;
-    padding: 10px; /* Add padding */
-    border: none;
-    color: white;
     background-color: rgb(48, 58, 65);
-    text-align: left;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
     font-size: 16px;
     cursor: pointer;
+    text-align: left;
+    width: 100%;
 }
 
 .sidebar button:hover {
     background-color: rgb(27, 27, 29);
 }
 
-#skills, #projects, #education {
-    display: none;
+.main-content {
+    flex-grow: 1;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-section {
+    display: none;
 }

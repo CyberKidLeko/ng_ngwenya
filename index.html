@@ -4,80 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/css/index.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
+    <!-- Banner -->
     <div id="banner">
-        <div id="banner-content">
-            <img src="src/banner.jpg" alt="image of lake" />
-            <div id="profile">
-                <img src="src/me.jpg" alt="image of me" class="profile-image">
-                <div id="name">
-                    <h1>Nkululeko Ngwenya</h1>
-                    <h2>FullStack Developer</h2>
-                </div>
+        <div id="profile-info">
+            <img src="src/me.jpg" alt="image of me" class="profile-image">
+            <div id="name">
+                <h1>Nkululeko Ngwenya</h1>
+                <h2>FullStack Developer</h2>
             </div>
         </div>
     </div>
-
+    
+    <!-- Main Content -->
     <div class="content">
+        <!-- Sidebar -->
         <div class="sidebar">
+            <button type="button" onclick="showSection('about')">About</button>
             <button type="button" onclick="showSection('skills')">Skills</button>
             <button type="button" onclick="showSection('projects')">Projects</button>
             <button type="button" onclick="showSection('education')">Education</button>
         </div>
 
-        <div id="About">
-            <p>Hey there! I’m Gift Ngwenya, your friendly neighborhood tech enthusiast and a third-year IT student at North-West University. With a major in Computer Information Systems and a minor in Computer Information Technology, I’m on a quest to conquer the world of Full Stack development, one line of code at a time! 🎉 I’m expected to graduate in 2026, and I’m excited to turn my passion into a thriving career.</p>
-            <p>My journey in tech is fueled by curiosity and creativity. I’ve dabbled in a variety of programming languages, including Java, C++, C#, JavaScript, and HTML5. I thrive in development environments like Microsoft Visual Studio and Oracle SQL Developer, where I get to transform ideas into robust software solutions.</p>
-            <h3>Full Stack Developer Extraordinaire</h3>
-            <p>What really gets me pumped is Full Stack development! I love crafting seamless web experiences, utilizing a blend of front-end and back-end technologies. Whether it’s whipping up dynamic user interfaces with JavaScript and CSS or architecting powerful back-end systems with ASP.NET, I’m all about building applications that are not only functional but also fun to use.</p>
-            <p>One of my proudest projects is the Tutoring App and Management System, where I designed a sleek database architecture to track student and tutor information effortlessly. I took on the challenge of ensuring efficient data collection and retrieval, all while keeping the user experience at the forefront. Who said coding can’t be exciting?</p>
-        </div>
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div id="about">
+                <p>Hey there! I’m Gift Ngwenya...</p>
+            </div>
 
-        <div id="skills">
-            <h3>Skills That Shine</h3>
-            <ul>
-                <li>Web Development: HTML, CSS, JavaScript</li>
-                <li>Languages: C#, Python, Java</li>
-                <li>Tools: Microsoft Office Suite, Google Suite, Microsoft Visual Studio, Oracle</li>
-                <li>Oracle SQL</li>
-            </ul>
-        </div>
+            <div id="skills" class="hidden-section">
+                <h3>Skills That Shine</h3>
+                <ul>
+                    <li>Web Development: HTML, CSS, JavaScript</li>
+                    <li>Languages: C#, Python, Java</li>
+                    <li>Tools: Microsoft Visual Studio, Oracle</li>
+                </ul>
+            </div>
 
-        <div id="projects">
-            <h3>Projects</h3>
-            <ul>
-                <li><a href="https://github.com/CyberKidLeko/ng_ngwenya">this website!</a></li>
-                <li><a href="https://github.com/CyberKidLeko/DasmotoArtsAndCafts">Dasmoto's arts and crafts!</a></li>
-            </ul>
-        </div>
+            <div id="projects" class="hidden-section">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="#">This Website!</a></li>
+                    <li><a href="#">Dasmoto Arts and Crafts</a></li>
+                </ul>
+            </div>
 
-        <div id="education">
-            <h3>Education</h3>
-            <!-- Add content for the education section here -->
+            <div id="education" class="hidden-section">
+                <h3>Education</h3>
+                <p>Details about your education...</p>
+            </div>
         </div>
     </div>
 
     <script>
         // Function to show a specific section and hide others
         function showSection(sectionId) {
-            // Get all section elements
             const sections = document.querySelectorAll('.main-content > div');
-            
-            // Loop through each section and hide it
             sections.forEach(section => {
                 section.style.display = 'none';
             });
-
-            // Show the section with the specified ID
             document.getElementById(sectionId).style.display = 'block';
         }
 
         // Show the about section by default when the page loads
         document.addEventListener('DOMContentLoaded', function() {
-            showSection('About');
+            showSection('about');
         });
     </script>
 </body>
