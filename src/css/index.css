@@ -94,7 +94,7 @@ body, html {
 
 .project-button {
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: row; /* Stack image and text vertically */
     align-items: center;
     text-decoration: none;
     background-color: #1c1c1e; /* Background color for buttons */
