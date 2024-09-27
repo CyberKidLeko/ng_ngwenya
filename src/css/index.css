@@ -8,13 +8,14 @@ body, html {
 #banner {
     width: 100vw;
     height: 350px;
-    background-image: url('src\banner.jpg');
-    /*background-color: #34495e;*/
+    background-image: url('src/banner.jpg'); 
+    background-size: cover; 
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0 20px;
-    object-fit: fill;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #profile-info {
