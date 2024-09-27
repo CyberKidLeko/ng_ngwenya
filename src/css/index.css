@@ -5,29 +5,26 @@ body, html{
     background-color: darkcyan;
 }
 
-#banner{
-    height: 130px;
+#banner #banner-content{
+    height: 70px;
     background-image: url('src\banner.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: inline-flexbox;
     align-items: center;
     opacity: 70%;
 }
 
-#banner-content{
-    display:flex;
-    align-items: center;
-    position: absolute;
-    bottom: -50px;
-}
+
 
 .profile-image{
     width:100px;
     height: 100px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    position:absolute;
+    bottom: -50px;
+    
 }
 
 #name{
@@ -45,7 +42,7 @@ content{
     width: 30%;
     height: 100%;
     padding: 0;
-    background-color:rgb(25, 105, 159);
+    background-color:rgb(20, 27, 32);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 16px;
@@ -57,17 +54,17 @@ content{
 
 .sidebar button {
     width: 100%; /* Full width of the sidebar */
-    padding: 20px;
+    padding: 0;
     border: none;
     color: white;
-    background-color: rgb(25, 105, 159); /* Blue color for the button */
+    background-color: rgb(48, 58, 65); /* Blue color for the button */
     text-align: left;
     font-size: 16px;
     cursor: pointer;
 }
 
 .sidebar button:hover {
-    background-color: darkblue;
+    background-color: rgb(27, 27, 29);
 }
 #projects{
     padding: 10%;
