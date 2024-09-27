@@ -19,8 +19,8 @@ body, html {
     background-size: cover;
     position: relative;
     display: flex;
-    align-items: center;
-    opacity: 0.9; /* Set opacity */
+    opacity: 0.1; /* Set opacity */
+    box-sizing: border-box;
     padding: 20px;
 }
 
@@ -46,11 +46,11 @@ body, html {
 }
 
 .content {
-    display: grid;
     padding: 20px; /* Adjust padding */
 }
 
 .sidebar {
+    display: grid;
     width: 30%;
     height: 100%;
     background-color: rgb(20, 27, 32);
