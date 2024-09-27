@@ -24,9 +24,11 @@
     
     <div class="content">
         <div class = "sidebar">
-            <button type="button" onclick="">Skills</button>
-            <button type="button" onclick="">Education</button>
-            <button type="button" onclick="">Projects</button>
+            <button type = "button" onclick="showSection('skills')">Skills</button>
+            <button type = "button" onclick="showSection('education')">Projects</button>
+            <button type = "button" onclick="showSection('project')">Education</button>
+            <button  onclick="showSection('education')">Education</button>
+            <button onclick="showSection('projects')">Projects</button>
         </div>
 
     
@@ -38,7 +40,7 @@
             <p>One of my proudest projects is the Tutoring App and Management System, where I designed a sleek database architecture to track student and tutor information effortlessly. I took on the challenge of ensuring efficient data collection and retrieval, all while keeping the user experience at the forefront. Who said coding can’t be exciting?</p>
         </div>
 
-        <div id = "skills">
+        <div id = "skills" >
             <h3>Skills That Shine</h3>
             <ul>
                 <li>Web Development: HTML, CSS, JavaScript</li>
@@ -48,7 +50,7 @@
             </ul>
         </div>
 
-        <div id = "Projects">
+        <div id = "projects">
             <ul>
                 <li><a href = "https://github.com/CyberKidLeko/ng_ngwenya">this website!</a></li>
                 <li><a href = "https://github.com/CyberKidLeko/DasmotoArtsAndCafts">Dasmoto's artys and crafts!</a></li>
@@ -67,6 +69,25 @@
         
     </div>
     
-    
+    <script>
+        // Function to show a specific section and hide others
+        function showSection(sectionId) {
+            // Get all section elements
+            const sections = document.querySelectorAll('.main-content > div');
+            
+            // Loop through each section and hide it
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the section with the specified ID
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the about section by default when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('about');
+        });
+    </script>
 </body>
 </html>
