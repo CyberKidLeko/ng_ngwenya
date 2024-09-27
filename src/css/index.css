@@ -7,7 +7,7 @@ body, html {
 
 #banner {
     width: 100vw;
-    height: 350px;
+    height: 250px;
     background-image: url('src/banner.jpg'); 
     background-size: cover; 
     background-position: center;
@@ -95,6 +95,7 @@ body, html {
 .project-button {
     display: flex;
     flex-direction: row; /* Stack image and text vertically */
+    flex-wrap: wrap;
     align-items: center;
     text-decoration: none;
     background-color: #1c1c1e; /* Background color for buttons */
@@ -105,7 +106,7 @@ body, html {
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     width: 100px;
     cursor: pointer; 
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Scale and elevate button on hover */
