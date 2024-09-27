@@ -5,7 +5,7 @@ body, html{
 }
 
 #banner{
-    height: 300px;
+    height: 130px;
     background-image: url('src\banner.jpg');
     background-size: cover;
     background-position: center;
@@ -31,4 +31,15 @@ body, html{
 #name{
     margin-left: 0;
 
+}
+content{
+    display: flex;
+    padding: 60px;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    color:darkcyan;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
