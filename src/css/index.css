@@ -50,8 +50,8 @@ body, html {
 .content {
     display: flex;
     overflow-y: auto;
-    max-height:400px;
-    height: 400px;
+    max-height:450px;
+    height: 450px;
     padding: 20px;
     box-sizing: border-box;
     background-color: #e3dddddd;
