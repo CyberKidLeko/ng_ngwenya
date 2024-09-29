@@ -23,9 +23,9 @@ body, html {
 #profile-info {
     display: flex;
     align-items: flex-end;
-    /*background-image: url('src/banner.jpg');*/
+    /*background-image: url('src/banner.jpg');
     background-size: cover; 
-    background-position: center;
+    background-position: center;*/
 }
 
 
