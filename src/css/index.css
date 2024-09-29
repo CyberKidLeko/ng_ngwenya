@@ -71,6 +71,7 @@ body, html {
     flex-direction: column;
     padding: 10px;
     position: sticky;
+    margin-left: 10px;
 }
 
 .sidebar button {
