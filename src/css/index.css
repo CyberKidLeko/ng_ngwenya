@@ -8,7 +8,8 @@ body, html {
 #banner {
     width: 100vw;
     height: 250px;
-    /*background-image: url('src/banner.jpg'); */
+    background-image: url('src/banner.jpg'); 
+    /*background-color: #2C3E50;*/
     background-size:contain; 
     background-position: center;
     display: flex;
@@ -17,15 +18,15 @@ body, html {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    background-color: #2C3E50;
+   
 }
 
 #profile-info {
     display: flex;
     align-items: flex-end;
-    /*background-image: url('src/banner.jpg');
+    background-image: url('src/banner.jpg');
     background-size: cover; 
-    background-position: center;*/
+    background-position: center;
 }
 
 
