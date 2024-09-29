@@ -115,16 +115,15 @@ body, html {
 
 /* Scale and elevate button on hover */
 .project-button:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    transform: translateX(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    transform: translate(-5px, -5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 /* Image within the project button */
 .project-image {
     width: 100px;
-    height: 100px; /* Fixed height for images */
-    object-fit: cover; /* Cover entire container without stretching */
+    height: 100px;
+    object-fit: cover; 
 }
 
 h1, h2, h3 {
@@ -164,7 +163,6 @@ h1, h2, h3 {
 
 .progress {
     height: 100%;
-    background-color: #3498db;
     text-align: center; /* Center-align text */
     line-height: 25px; /* Align text vertically */
     color: white;
