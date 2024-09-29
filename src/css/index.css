@@ -95,6 +95,9 @@ body, html {
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: hidden;
+    overflow-wrap: wrap;
+    overflow: scroll;
     padding: 20px;
     background-color: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
