@@ -51,10 +51,10 @@ body, html {
     display: flex;
     overflow-y: auto;
     max-height:600px;
-    height: 600px;
+    height: 500px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #ECECEC;
+    background-color: #e3dddddd;
 }
 
 .sidebar {
