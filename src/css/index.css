@@ -8,8 +8,8 @@ body, html {
 #banner {
     width: 100vw;
     height: 250px;
-    background-image: url('src/banner.jpg'); 
-    /*background-color: #2C3E50;*/
+    /*background-image: url('src/banner.jpg'); */
+    background-color: #2C3E50;
     background-size:contain; 
     background-position: center;
     display: flex;
@@ -24,9 +24,10 @@ body, html {
 #profile-info {
     display: flex;
     align-items: flex-end;
-    background-image: url('src/banner.jpg');
+    background-color: #2C3E50;
+/*background-image: url('src/banner.jpg');
     background-size: cover; 
-    background-position: center;
+    background-position: center;*/
 }
 
 
