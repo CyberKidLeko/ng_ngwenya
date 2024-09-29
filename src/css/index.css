@@ -24,6 +24,8 @@ body, html {
     display: flex;
     align-items: flex-end;
     background-image: url('src/banner.jpg');
+    background-size: cover; 
+    background-position: center;
 }
 
 
