@@ -23,6 +23,7 @@ body, html {
 #profile-info {
     display: flex;
     align-items: flex-end;
+    background-image: url('src/banner.jpg');
 }
 
 
@@ -44,7 +45,7 @@ body, html {
 #name h2 {
     margin: 0;
     font-size: 16px;
-    color: #ecf0f1;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .content {
@@ -130,11 +131,9 @@ body, html {
     height: 100px;
     object-fit: cover; 
 }
-h2{
-    color: rgba(255, 255, 255, 0.7)
-}
 
-h1, h3 {
+
+h1, h2, h3 {
     color: #2C3E50;
 }
 
