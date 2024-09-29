@@ -182,7 +182,7 @@ h1, h2, h3 {
     line-height: 25px; /* Align text vertically */
     color: white;
     font-weight: bold;
-    transition: width 0.3s ease;
+    transition: width 1.2s ease;
 }
 
 .progress-text {
