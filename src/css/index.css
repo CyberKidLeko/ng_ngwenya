@@ -230,7 +230,7 @@ h1, h2, h3 {
     }
 
     /* Show top navigation bar */
-    .top-navigation #button {
+    .top-navigation button {
         display: flex;
         justify-content: space-around;
     }
