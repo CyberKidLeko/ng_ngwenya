@@ -62,7 +62,7 @@ body, html {
 }
 
 .top-navigation {
-    display: flex;
+    display: none;
     justify-content: space-around;
     background-color: #ffffff;
     padding: 15px;
