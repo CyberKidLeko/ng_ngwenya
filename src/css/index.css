@@ -71,19 +71,18 @@ body, html {
     top: 0;
 }
 
-.top-navigation button {
+#top-nav button {
     display: none;
     background-color: rgb(48, 58, 65);
     color: white;
     padding: 15px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.top-navigation button:hover {
+#top-nav button:hover {
     background-color: rgb(27, 27, 29);;
 }
 
@@ -230,12 +229,12 @@ h1, h2, h3 {
     }
 
     /* Show top navigation bar */
-    .top-navigation button {
-        display: flex;
-        justify-content: space-around;
+    #top-nav button {
+        display: block;
+        
     }
 
-    .top-navigation {
+    #top-nav{
         display: flex;
         justify-content: space-around;
     }
