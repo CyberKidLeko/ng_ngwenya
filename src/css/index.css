@@ -61,7 +61,7 @@ body, html {
     background-color: #e3dddddd;
 }
 
-.top-navigation {
+#top-nav {
     display: none;
     justify-content: space-around;
     background-color: #34495E;
