@@ -5,6 +5,8 @@ body, html {
     background-color: #ECECEC;
 }
 
+
+/*banner*/
 #banner {
     width: 100vw;
     height: 250px;
@@ -61,6 +63,7 @@ body, html {
     background-color: #e3dddddd;
 }
 
+/*navigation bar*/
 #top-nav {
     display: none;
     justify-content: space-around;
@@ -86,6 +89,7 @@ body, html {
     background-color: rgb(27, 27, 29);;
 }
 
+/*sidebar for bigger screens*/
 .sidebar {
     width: 300px;
     min-width: 270px;
@@ -116,6 +120,7 @@ body, html {
     background-color: rgb(27, 27, 29);
 }
 
+/*body of page*/
 .main-content {
     flex-grow: 1;
     display: flex;
@@ -129,10 +134,12 @@ body, html {
     gap: 20px;
 }
 
+/*for all the items to pop up in the div*/
 .hidden-section {
     display: none;
 }
 
+/*sidebar items*/
 .project-button {
     display: flex;
     flex-direction: row;
@@ -170,19 +177,22 @@ h1, h2, h3 {
     color: #2C3E50;
 }
 
+
+/*projeects div*/
 .projectSpace{
     gap: 15px;
 }
 
-
+/*for skills div*/
 .skills-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     flex-wrap:wrap;
     justify-content: flex-start;
 }
 
+/*eavh skil item*/
 .skill-item {
     display: flex;
     flex-direction: column;
@@ -217,12 +227,15 @@ h1, h2, h3 {
     color: white;
 }
 
+
+/*media item for larger screens */
 @media screen and (min-width: 769px) {
     #top-nav {
         display: none; /* Ensure it's hidden */
     }
 }
 
+/*media item for smaller screens*/
 @media screen and (max-width: 768px) {
     /* Stack content vertically for mobile */
     .content {
@@ -240,9 +253,10 @@ h1, h2, h3 {
         
     }
 
+    /*flex display for the navigation*/
     #top-nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around; 
     }
     
 }
