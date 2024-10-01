@@ -64,7 +64,7 @@ body, html {
 .top-navigation {
     display: none;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #34495E;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -72,7 +72,8 @@ body, html {
 }
 
 .top-navigation button {
-    background-color: #3498DB;
+    display: none;
+    background-color: rgb(48, 58, 65);
     color: white;
     padding: 10px 20px;
     margin: 0 10px;
@@ -83,7 +84,7 @@ body, html {
 }
 
 .top-navigation button:hover {
-    background-color: #2980B9;
+    background-color: rgb(27, 27, 29);;
 }
 
 .sidebar {
@@ -229,8 +230,14 @@ h1, h2, h3 {
     }
 
     /* Show top navigation bar */
+    .top-navigation #button {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .top-navigation {
         display: flex;
         justify-content: space-around;
     }
+    
 }
