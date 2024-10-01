@@ -217,6 +217,12 @@ h1, h2, h3 {
     color: white;
 }
 
+@media screen and (min-width: 769px) {
+    #top-nav {
+        display: none; /* Ensure it's hidden */
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* Stack content vertically for mobile */
     .content {
