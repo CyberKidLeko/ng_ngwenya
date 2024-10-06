@@ -32,7 +32,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/portfolio-website.git
+git clone https://github.com/CyberKidLeko/ng_ngwenya.git
 Navigate to the project directory:
 
 bash
