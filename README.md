@@ -27,7 +27,6 @@ This project includes multiple sections, including an "About Me" section, a list
 - **HTML5**: Used to structure the content of the website.
 - **CSS3**: Used for styling, layout design, and creating hover effects and transitions.
 - **JavaScript**: Used to handle interactive elements, such as dynamically displaying content based on user navigation.
-- **Shopify (Optional)**: Experience or integration for e-commerce-related content (if applicable).
 
 ## Setup and Installation
 To run this project locally, follow these steps:
