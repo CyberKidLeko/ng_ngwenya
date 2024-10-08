@@ -169,8 +169,16 @@
                 section.style.display = 'none';
             });
             document.getElementById(sectionId).style.display = 'block';
-        }
 
+            if (sectionId === 'skills') {
+        const progressBars = document.getElementById(sectionId).querySelectorAll('.progress');
+        progressBars.forEach(bar => {
+            const skillLevel = bar.getAttribute('style').match(/width: (\d+)%/)[1];
+            bar.style.setProperty('--progress-width', `${skillLevel}%`);
+            bar.style.animation = 'fillProgress 2s ease-in-out forwards';
+        });
+        }
+        
         // Show the about section by default when the page loads
         document.addEventListener('DOMContentLoaded', function() {
             showSection('about');
