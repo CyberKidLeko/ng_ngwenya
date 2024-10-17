@@ -180,6 +180,7 @@ h1, h2, h3 {
 
 /*projeects div*/
 .projectSpace{
+    display: flex;
     gap: 15px;
 }
 
@@ -192,18 +193,19 @@ h1, h2, h3 {
     justify-content: flex-start;
 }
 
-/*eavh skil item*/
+/*each skil item*/
 .skill-item {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 100%;
     gap: 5px;
 }
-
+/*sets the text  within the bar*/
 .skill-label {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+/*sets the progess bar*/
 .progress-bar {
     width: 100%;
     background-color: #ecf0f1;
@@ -213,6 +215,7 @@ h1, h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*this sets the */
 .progress {
     height: 100%;
     text-align: center; /* Center-align text */
@@ -260,3 +263,7 @@ h1, h2, h3 {
     }
     
 }
+
+/*Just so i dont forget where and how i arranged everything
+Version cotrol done on github
+Code refused to run on localhost so i commit and push so that the code gets deployed on github pages*/
