@@ -17,7 +17,7 @@ body, html {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding: 20pxa;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
    
@@ -163,6 +163,8 @@ body, html {
 .project-button:hover {
     transform: translate(-5px, -5px); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    text-decoration: underline; /* Add underline */
+    color: #FFD700; /* Change to gold on hover */
 }
 
 /* Image within the project button */
@@ -223,12 +225,20 @@ h1, h2, h3 {
     color: white;
     font-weight: bold;
     transition: width 1.2s ease;
+    animation: fillProgress 2s ease-in-out forwards;
 }
 
 .progress-text {
     padding-right: 10px; /* Add padding for spacing */
     color: white;
 }
+
+/* Add animation for the progress bars */
+@keyframes fillProgress {
+    from { width: 0; }
+    to { width: var(--progress-width); } /* Variable for different skill widths */
+}
+
 
 
 /*media item for larger screens */
