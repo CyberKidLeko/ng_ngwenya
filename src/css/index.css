@@ -233,6 +233,35 @@ h1, h2, h3 {
     color: white;
 }
 
+
+  
+  #contact h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.1);
+  }
+  
+
 /* Add animation for the progress bars */
 @keyframes fillProgress {
     from { width: 0; }
