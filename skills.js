@@ -34,11 +34,5 @@ function renderSkills() {
     });
 }
 
-// Function to sort skills by percentage
-function sortSkills() {
-    skills.sort((a, b) => b.percentage - a.percentage); // Sort in descending order
-    renderSkills(); // Re-render the skills
-}
-
 // Call renderSkills to display the initial list
 renderSkills();
