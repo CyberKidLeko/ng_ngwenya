@@ -63,80 +63,10 @@
 
             <div id="skills" class="hidden-section">
                 <h3>Skills That Shine</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <div class="skill-label">HTML & CSS</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%; background-color: #00509e; color: white;">85%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">React</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%; background-color: #80c1e3; color: black;">40%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">JavaScript</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%; background-color: #0077b6; color: white;">70%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">Git and GitHub</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%; background-color: #003566; color: white;">90%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">Web Design</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%; background-color: #468faf; color: white;">75%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">SQL</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 65%; background-color: #61a5c2; color: white;">65%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">Python</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 55%; background-color: #a9d6e5; color: black;">55%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">Java</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%; background-color: #0077b6; color: white;">75%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">ASP.net</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%; background-color: #468faf; color: white;">70%</div>
-                        </div>
-                    </div>
-            
-                    <div class="skill-item">
-                        <div class="skill-label">.NET (WinForms)</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%; background-color: #00509e; color: white;">75%</div>
-                        </div>
-                    </div>
-                </div>
+                <div id="skills-container" class="skills-container"></div>
+                <button onclick="sortSkills()">Sort by Percentage</button>
             </div>
-            
-            
+                
             
 
             <div id="projects" class="hidden-section">
@@ -208,38 +138,8 @@
         </div>
  </div>
 
-    <script>
-    // Function to show a specific section and hide others
-    function showSection(sectionId) {
-        // Hide all sections within the main content area
-        const sections = document.querySelectorAll('.main-content > div');
-        sections.forEach(section => {
-            section.style.display = 'none';
-        });
-
-        // Show the selected section
-        document.getElementById(sectionId).style.display = 'block';
-
-        // If the skills section is displayed, animate the progress bars
-        if (sectionId === 'skills') {
-            const progressBars = document.getElementById(sectionId).querySelectorAll('.progress');
-            progressBars.forEach(bar => {
-                // Extract width value directly from the style or set a fallback
-                const skillLevel = bar.style.width || '0%';
-                bar.style.setProperty('--progress-width', skillLevel);
-                bar.style.width = '0%'; // Reset the width to 0 for the animation to work
-                bar.style.animation = 'fillProgress 2s ease-in-out forwards';
-                bar.style.width = skillLevel; // Trigger the width change for the animation
-            });
-        }
-    }
-
-    // Ensure the DOM is fully loaded before running the script
-    document.addEventListener('DOMContentLoaded', function() {
-        // Show the "about" section by default on page load
-        showSection('about');
-    });
-    </script>
+ <script src="script.js"></script>
+ <script src="skills.js"></script>
 
 </body>
 </html>
