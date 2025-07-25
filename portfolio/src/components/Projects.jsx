@@ -3,6 +3,8 @@ import portfolioImg from '../assets/images/portfolio.jpg';
 import paintImg from '../assets/images/paint.jpg';
 import tutoringAppImg from '../assets/images/tutoringApp.jpeg';
 import heartsImg from '../assets/images/hearts.jpeg';
+import ChatImg from '../assets/images/chat.png';
+import SoonImg from '../assets/images/coming.png';
 import '../assets/styles/Projects.css';
 
 const projects = [
@@ -25,6 +27,16 @@ const projects = [
     title: "Date?",
     image: heartsImg,
     link: "https://github.com/CyberKidLeko/Go_out_with_me_please"
+  },
+  {
+    title: "Fullstack Chat App",
+    image: ChatImg,
+    link: "https://github.com/CMPG315-G12/Chat-Application"
+  },
+  {
+    title: "More projects coming soon!",
+    image: SoonImg,
+    link: "#"
   }
 ];
 
