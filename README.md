@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This project is a personal portfolio website designed to showcase skills, projects, and educational background. It is built using HTML, CSS, and JavaScript, with a focus on providing a clean, user-friendly interface and responsive design. The project serves as a demonstration of full-stack web development skills and a centralized location for potential employers or collaborators to learn more about you and your work.
+This project is a personal portfolio website designed to showcase skills, projects, and educational background. Built using **React**, it provides a clean, responsive interface that reflects full-stack web development capabilities. It serves as a centralized hub for potential employers or collaborators to learn more about me and my work.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -14,27 +14,30 @@ This project is a personal portfolio website designed to showcase skills, projec
 - [Contact](#contact)
 
 ## Overview
-This project includes multiple sections, including an "About Me" section, a list of technical skills, a projects showcase, and an educational history. The sidebar navigation allows users to easily switch between sections, and all content is styled for a cohesive visual appearance.
+The site includes sections such as About Me, Technical Skills, Projects, and Education. Navigation is handled through a responsive layout, ensuring accessibility across devices. It's styled with custom CSS and built to be easily extended.
 
 ## Features
-- **Responsive Layout**: Designed to look good on various screen sizes, from mobile to desktop.
-- **Dynamic Section Display**: Uses JavaScript to dynamically show or hide sections based on user input.
-- **Interactive Sidebar**: Navigation buttons to jump between different sections (About, Skills, Projects, and Education).
-- **Project Showcase**: Display of various projects with descriptions and links to GitHub repositories. 
-- **Custom Styling**: Consistent look and feel with custom CSS styling, including shadows, hover effects, and animations. 
+- **Responsive Design**: Works across desktop, tablet, and mobile.
+- **React Routing / State Management** *(if applicable)*: Handles navigation and state updates smoothly.
+- **Interactive Sidebar Navigation**: Switch between sections easily.
+- **Project Showcase**: Displays personal projects with descriptions and GitHub links.
+- **Custom Styling**: CSS styling with hover effects, animations, and clean UI components.
 
 ## Technologies Used
-- **HTML5**: Used to structure the content of the website.
-- **CSS3**: Used for styling, layout design, and creating hover effects and transitions.
-- **JavaScript**: Used to handle interactive elements, such as dynamically displaying content based on user navigation.
+- **React** (Create React App)
+- **JavaScript (ES6+)**
+- **CSS3 / Tailwind / Styled Components** *(depending on your styling approach)*
+- **Git & GitHub**
+- **gh-pages** (for deployment)
 
 ## Setup and Installation
-To run this project locally, follow these steps:
+
+To run the project locally:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/CyberKidLeko/ng_ngwenya.git
-    ```
+   ```bash
+   git clone https://github.com/CyberKidLeko/ng_ngwenya.git
+
 2. Navigate to the project directory:
     ```bash
     cd portfolio-website
@@ -76,5 +79,5 @@ This project is open-source and available under the MIT License.
 ## Contact
 For any inquiries or feedback, please reach out:
 
-- **Name**: Nkululeko Ngwenya
+- **Name**: Nomsa Ngwenya
 - **Email**: [nkululekongwenya123@gmail.com](mailto:nkululekongwenya123@gmail.com)
