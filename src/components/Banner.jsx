@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div id="banner">
       <div id="profile-info">
-        <img src={me} alt="Gift Ngwenya" className="profile-image" />
+        <img src={me} alt="Nomsa Ngwenya" className="profile-image" />
         <div id="name">
           <h1>N.G Ngwenya</h1>
           <h2>FullStack Developer</h2>
