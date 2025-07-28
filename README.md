@@ -7,7 +7,6 @@ This project is a personal portfolio website designed to showcase skills, projec
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
-- [File Structure](#file-structure)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -42,13 +41,16 @@ To run the project locally:
     ```bash
     cd portfolio-website
     ```
-3. Open the `index.html` file:
-   - Open `index.html` in your preferred web browser to view the website.
-
+3. npm install:
+   ```bash
+    npm install
+    ```
+4. npm run:
+   ```bash
+    npm start
+    ```
+   
 Optional: If you want to make changes, you can edit the HTML, CSS, and JavaScript files located in the `src` directory.
-
-## File Structure
-Here's a brief overview of the project's structure:
 
 ## Usage
 - **Navigation**: Use the sidebar to navigate through different sections: About, Skills, Projects, and Education.
